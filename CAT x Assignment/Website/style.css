@@ -1,0 +1,157 @@
+body {
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(46, 126, 111, 0.301);
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: #084f49;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; 
+    margin-left: 40px;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 30px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none; 
+    color: rgb(176, 235, 221);
+    font-size: 14px; 
+    
+}
+
+nav a:hover {
+    color: #ffffff; 
+}
+
+nav li::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #084f49;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    transition: width 0.2s;
+}
+
+nav li:hover::after{
+    width: 100%;
+}
+
+nav li:hover a {
+    color: #5F9EA0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-contents {
+    display: none; 
+    position: absolute;
+    color: #000000; 
+    background-color: #084f49; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-contents a {
+    color: rgb(3, 1, 1);
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contents a:hover {
+    background-color: #091515;
+}
+
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(46, 126, 111, 0.301);
+    border-radius: 10px;
+}
+
+footer {
+    display: none; 
+    text-align: center;
+    padding: 8px;
+    color: #000000;
+    background-color: rgba(77, 106, 101, 0.301);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: rgba(4, 47, 39, 0.301);
+}
+
+
+nav .logo p {
+    font-size: 15px; 
+    font-weight: bold; 
+    float: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin-right: 40px; 
+}
+
+th, td {
+    padding: 10px; 
+    background-color: rgba(77, 106, 101, 0.301);
+}
+
+.container {
+    background-color: rgba(46, 126, 111, 0.301); 
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(240, 234, 234, 0.1); 
+    overflow: auto; 
+}
+
+table tbody tr:hover {
+    background-color: rgba(38, 109, 96, 0.301);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 5em; 
+  }
+  
+
